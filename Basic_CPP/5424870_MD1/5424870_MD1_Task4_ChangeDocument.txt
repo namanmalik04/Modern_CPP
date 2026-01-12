@@ -1,0 +1,32 @@
+During the refactoring of Task 4, several improvements were applied to make the DTC dynamic allocation, memory leak, and dangling pointer demonstrations safer and more maintainable:
+
+1. Initialization Lists in Constructor
+
+The constructor now uses initialization lists, which is more efficient and considered modern C++ style.
+
+2. Const-Correctness
+
+printDTCInfo() is marked as const to prevent accidental modification of object state when printing.
+
+3. Clear Sectioning
+
+The code is now logically separated into class definition, memory leak demo, leak fix, dangling pointer demo, dangling fix, and main.
+
+Each section has headers and comments describing its purpose.
+
+4. Safe Memory Handling
+
+After deleting dynamically allocated objects, pointers are explicitly set to nullptr.
+
+This prevents unsafe access and dangling pointer issues.
+
+5. Improved Comments
+
+Comments now explicitly explain the purpose of memory leak and dangling pointer demos, and the reasoning behind setting pointers to nullptr.
+
+6. Readable Output
+
+Output formatting now includes separators and labels for each DTC info print, improving readability when running multiple demonstrations.
+
+Summary:
+The refactored code demonstrates safe dynamic memory usage, handles memory leaks, and avoids dangling pointers. It also follows modern C++ best practices, including initialization lists, const correctness, and clear documentation, making it suitable for embedded system diagnostics learning.

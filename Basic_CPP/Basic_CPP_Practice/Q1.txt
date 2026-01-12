@@ -1,0 +1,92 @@
+Problem Statement:
+Design a pointer-based library management system in C++ with the following classes:
+Book – 	Represents a book with:
+title		(string)
+author		(string)
+pages		(int)
+Shelf	– Represents a shelf that owns up to 10 books.
+Uses a fixed-size array of Book*
+Overload +=		to add a Book* to the shelf
+Library	– Represents a library that references up to 5 shelves.
+Uses a fixed-size array of Shelf*
+Overload +=		to add a Shelf* to the library
+ 
+ 
+Book ID
+	
+Title
+	
+Author
+	
+Pages
+
+
+b1
+	
+The Hobbit
+	
+J.R.R. 				Tolkien
+	
+310
+
+
+b2
+	
+Dune
+	
+Frank Herbert
+	
+412
+
+
+b3
+	
+To Kill a 				Mockingbird
+	
+Harper Lee
+	
+281
+
+
+b4
+	
+1984
+	
+George Orwell
+	
+328
+
+
+b5
+	
+Pride and 				Prejudice
+	
+Jane Austen
+	
+279
+ 
+ 
+Shelf ID
+	
+Books 				Contained
+
+
+s1
+	
+b1, b2
+
+
+s2
+	
+b3, b4, b5
+ 
+Library
+	
+Shelves 				Referenced
+
+
+lib
+	
+s1, s2
+ 
+ 

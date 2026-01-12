@@ -1,0 +1,26 @@
+5424870_MD2_Task2_ChangeDocument.txt
+
+=== Changes Made by GenAI Refactoring ===
+
+1. **Improved Comments and Readability**
+   - Added clearer formatting and consistent indentation across all files.
+
+2. **Const-Correctness**
+   - Marked non-modifying member functions as const for safety and clarity.
+
+3. **Naming Consistency**
+   - Retained `m_` for class members, `nullptr` checks added for safety.
+
+4. **Safe Memory Handling**
+   - Verified all `new` allocations are paired with `delete` and nullified pointers.
+
+5. **Readability Enhancements**
+   - Clear separation of logic in `main()` using blank lines and section comments.
+
+6. **Code Maintainability**
+   - Easier testing and debugging with structured DTC class and display function.
+
+=== Benefits ===
+- Better maintainability and safety in embedded environments.
+- Enhanced clarity for future unit testing.
+- Code now meets readability, modularity, and determinism standards.

@@ -1,0 +1,56 @@
+In this task, I refactored my original FleetVehicle program with the help of a GenAI tool. The following are the key changes made and the benefits I observed after refactoring:
+
+1. Code Formatting and Readability
+
+The original code had uneven indentation and spacing.
+
+The GenAI version uses proper alignment, consistent indentation, and clear section separation.
+
+This made the code much easier to read and navigate.
+
+2. Improved Variable and Parameter Naming
+
+Earlier, some variables were named generically (like id, dist, fuel).
+
+In the refactored code, variable names are more descriptive such as distanceTravelled, fuelAmount, and vehicleID.
+
+This improves clarity and self-documentation.
+
+3. Added Structured Comments and Docstrings
+
+The GenAI version includes meaningful comments before each function and class section.
+
+This helps in quickly understanding the purpose of each part, which was missing earlier.
+
+4. Enhanced Constructor Initialization
+
+The refactored version uses member initializer lists in constructors instead of assignment inside the body.
+
+This is a better C++ practice, as it ensures direct member initialization and slightly improves performance.
+
+5. Const-Correctness and Safe References
+
+Getter methods are now marked as const, ensuring they don’t modify class data accidentally.
+
+References and const string& are used where applicable, avoiding unnecessary string copying.
+
+6. Better Menu Display and Messages
+
+The GenAI version uses cleaner console messages and formatting for better user readability.
+
+Added section headers like “Fleet Vehicle Management” and “Vehicle Details.”
+
+7. Error Handling Improvements
+
+Exception handling messages are more informative and precise.
+
+Refuel validation clearly explains invalid input.
+
+8. General Code Modularity and Maintainability
+
+The functions are grouped logically with comments: constructors, getters/setters, behaviors, and global utilities.
+
+This modular approach makes it easy to maintain and extend the program in the future.
+
+Summary:
+Overall, the GenAI refactoring helped me make my code cleaner, more professional, and better structured. The readability, maintainability, and documentation have improved significantly without changing the program’s core logic or behavior.

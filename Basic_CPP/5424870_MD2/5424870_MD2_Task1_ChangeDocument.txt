@@ -1,0 +1,58 @@
+------------------------------------------------------------
+Change Document – Task 1
+------------------------------------------------------------
+
+1. Summary of Improvements
+------------------------------------------------------------
+• Used initialization lists in constructors.
+• Added const correctness to functions.
+• Improved output formatting in printDTCInfo().
+• Added input validation in updateOccurrenceCount().
+• Removed using namespace std from header file.
+• Improved code comments and readability.
+
+------------------------------------------------------------
+2. Example of Changes
+------------------------------------------------------------
+Before:
+DTC::DTC(string code, string desc, bool active, int occCount, ...)
+
+After:
+DTC::DTC(const string& code, const string& desc, bool active, int occCount, ...)
+    : m_code(code), m_description(desc), ...
+
+Benefit:
+→ Reduces redundant copying and improves performance.
+
+------------------------------------------------------------
+Before:
+void DTC::printDTCInfo() {
+    cout << "Code: " << m_code;
+}
+
+After:
+void DTC::printDTCInfo() const {
+    cout << "\n---- DTC Information ----\nCode: " << m_code;
+}
+
+Benefit:
+→ Const correctness prevents unintended data modification.
+
+------------------------------------------------------------
+Before:
+m_occurrenceCount = count;
+
+After:
+if (count >= 0) m_occurrenceCount = count;
+
+Benefit:
+→ Prevents invalid negative values.
+
+------------------------------------------------------------
+3. Overall Benefits
+------------------------------------------------------------
+✓ Improved readability and maintainability  
+✓ Reduced risk of side effects  
+✓ Better adherence to C++ best practices  
+✓ Consistent naming and formatting
+------------------------------------------------------------

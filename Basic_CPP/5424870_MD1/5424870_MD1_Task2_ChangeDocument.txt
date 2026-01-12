@@ -1,0 +1,48 @@
+After refactoring my original DTC program with the help of a GenAI tool, I identified several key improvements that made the code cleaner, safer, and easier to maintain.
+
+1. Better Code Structure and Formatting
+
+In the original version, all code blocks were close together, making it hard to read.
+
+The GenAI version uses clear sections for constructors, getters/setters, and behavior methods, along with proper spacing.
+
+2. Const-Correctness
+
+In the refactored code, all read-only functions like getters and printDTCInfo() are marked as const.
+
+This ensures that these functions cannot modify class data accidentally.
+
+3. Member Initialization Lists
+
+The new version uses initialization lists in constructors.
+
+This is a more efficient and modern C++ practice that directly initializes data members.
+
+4. Improved Naming Conventions
+
+Function names now follow consistent camelCase style.
+
+For example, getActive() was replaced with isActive() which reads more naturally for boolean values.
+
+5. Cleaner and More Informative Output
+
+The display function now uses clear headers and aligned output for readability.
+
+It’s easier to understand the diagnostic data when printed.
+
+6. Safer String Passing
+
+The refactored code uses const string& parameters to avoid unnecessary string copying, improving efficiency.
+
+7. Logical Grouping of Code
+
+Constructors, accessors, and behaviors are grouped logically with comment headers, making navigation simpler.
+
+8. General Readability and Maintainability
+
+The code is now formatted, documented, and consistent.
+
+These improvements make it much easier to extend (for example, when adding new DTC attributes or methods in Task 3).
+
+Summary:
+The GenAI-refactored version follows modern C++ practices, improves efficiency with member initialization lists, adds safety through const usage, and significantly enhances readability through structure and documentation.
